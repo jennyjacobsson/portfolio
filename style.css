@@ -50,10 +50,10 @@ header {
   justify-content: space-between;
 }
 
-.headertitle {
+.headerTitle {
   margin-top: 0;
   padding: 10px 50px;
-  text-shadow: 0.2em 0.2em 0 rgba(0, 0, 0, 0.1);
+  text-shadow: 0.2em 0.2em 0 rgba(0, 0, 0, 0.2);
 }
 
 .headerTitle h1 {
@@ -95,6 +95,10 @@ header {
   text-align: left;
 }
 
+.tech p {
+  font-size: 18px;
+}
+
 h3 {
   display: inline-block;
   padding: 5px;
@@ -109,7 +113,7 @@ h3 {
   padding: 30px;
   background-color: #f4f4f4;
   font-size: 18px;
-  line-height: 29px;
+  /* line-height: 29px; */
 }
 
 .projects-wrap {
@@ -120,7 +124,7 @@ h3 {
 .project-container {
   margin: 0;
   padding: 20px 5px;
-  justify-content: space-evenly;
+  justify-content: space-between;
   width: 100%;
   height: auto;
   text-align: left;
@@ -135,14 +139,21 @@ h3 {
 .project-container div,
 .other-projects div {
   display: inline-block;
-  padding: 5px 10px;
-  background-color: greenyellow;
+  padding: 0 5px;
+  background-color: rgb(127, 235, 122);
   font-size: 16px;
-  margin-top: 10px;
+  line-height: 24px;
 }
 
-.other-projects h4 {
+/* .other-projects h4 {
   color: rgb(120, 79, 244);
+} */
+
+.other-projects a {
+  text-decoration: none;
+}
+.p-name {
+  color: blue;
 }
 
 .skills {
@@ -158,7 +169,7 @@ h3 {
 }
 
 .tech {
-  line-height: 29px;
+  line-height: 40px;
   font-size: 18px;
   padding: 30px;
 }
@@ -244,28 +255,31 @@ footer h4 {
 
   .text {
     padding: 100px;
-    font-size: 30px;
+    font-size: 24px;
+  }
+
+  .tech p {
+    font-size: 24px;
   }
 
   h3 {
     padding: 10px;
-    font-size: 48px;
-    line-height: 58px;
+    font-size: 26px;
   }
 
   .projects {
     padding: 100px;
-    font-size: 25px;
-    line-height: 41px;
+    font-size: 20px;
   }
 
   .project-container {
     width: 40%;
+    font-size: 20px;
   }
 
   .skills-wrap {
     line-height: 50px;
-    font-size: 30px;
+    font-size: 22px;
   }
 
   .more-wrap {
@@ -274,6 +288,6 @@ footer h4 {
 
   footer {
     padding: 100px;
-    font-size: 30px;
+    font-size: 24px;
   }
 }
