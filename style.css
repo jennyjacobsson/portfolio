@@ -1,9 +1,9 @@
 body {
-  margin: 0;
   height: 100%;
   width: 100%;
-  font-family: "Roboto", sans-serif;
+  margin: 0;
   text-align: center;
+  font-family: "Roboto", sans-serif;
 }
 
 /* HEADER */
@@ -16,70 +16,66 @@ body {
 header {
   width: 100%;
   margin: auto;
-  background-image: url(./images/gray-pathway-surrounded-by-green-tress-41102.jpg);
+  background-image: url(images/bg.jpg);
   background-size: cover;
   background-position: right bottom;
   color: white;
 }
 
-.socialMedia {
+.top-icons {
   display: flex;
   justify-content: flex-end;
   height: 90px;
   padding-top: 60px;
 }
 
-.socialMedia img,
-.more-icons img {
+.top-icons img,
+.bottom-icons img {
   height: 20px;
   width: 20px;
 }
 
-.socialMedia div,
-.more-icons div {
+.top-icons div,
+.bottom-icons div {
   display: flex;
-  align-items: center;
-  justify-content: center;
   height: 40px;
   width: 40px;
+  margin: 5px;
+  align-items: center;
+  justify-content: center;
   border: white 3px solid;
   border-radius: 50%;
-  margin: 5px;
 }
 
-.headerContainer {
-  display: flex;
-  justify-content: space-between;
-}
-
-.headerTitle {
+.header-title {
   margin-top: 0;
   padding: 10px;
-  text-shadow: 0.2em 0.2em 0 rgba(0, 0, 0, 0.3);
 }
 
-.headerTitle h1 {
+.header-title h1 {
   margin-top: 0;
   font-size: 40px;
+  text-shadow: 0.06em 0.06em 0 rgba(0, 0, 0, 0.3);
 }
 
-.headerTitle h2 {
+.header-title h2 {
   font-family: "Montserrat", sans-serif;
   font-size: 18px;
   font-weight: bold;
+  text-shadow: 0.1em 0.1em 0 rgba(0, 0, 0, 0.3);
 }
 
-.headerContainer {
+.header-container {
   display: inline-block;
   text-align: left;
 }
 
-.headerContainer img {
+.header-container img {
   height: 160px;
   width: 160px;
-  object-fit: cover;
   margin-bottom: -5px;
   margin-left: 120px;
+  object-fit: cover;
   border-radius: 50%;
   border: white 3px solid;
 }
@@ -119,6 +115,12 @@ header {
   text-align: left;
 }
 
+.tech {
+  padding: 30px;
+  line-height: 1.4;
+  font-size: 18px;
+}
+
 .tech p {
   font-size: 18px;
 }
@@ -132,7 +134,6 @@ h3 {
   font-family: "Montserrat", sans-serif;
   font-weight: bold;
   font-size: 22px;
-  line-height: 27px;
 }
 
 .projects {
@@ -146,17 +147,17 @@ h3 {
   flex-wrap: wrap;
 }
 
-.project-container {
+.project-item {
   margin: 0;
   padding: 20px 5px;
-  justify-content: space-between;
   width: 100%;
   height: auto;
-  text-align: left;
   flex-grow: 1;
+  justify-content: space-between;
+  text-align: left;
 }
 
-.project-container img {
+.project-item img {
   width: 100%;
   height: auto;
 }
@@ -165,28 +166,24 @@ h3 {
   text-decoration: none;
   color: rgba(54, 139, 250, 0.988);
 }
-.project-container p,
+
+.project-item p,
 .other-projects p {
   margin-bottom: 8px;
 }
 
-.project-container div,
+.project-item div,
 .other-projects div {
   display: inline-block;
   margin-bottom: 5px;
-  font-size: 16px;
-  line-height: 24px;
-  background-color: rgba(127, 235, 122, 0.35);
   padding: 0 5px;
-}
-.other-projects {
-  text-align: left;
+  background-color: rgba(127, 235, 122, 0.35);
+  font-size: 16px;
+  line-height: 1.4;
 }
 
-.other-projects a,
-.other-projects a:visited {
-  text-decoration: none;
-  color: rgba(54, 139, 250, 0.988);
+.other-projects {
+  text-align: left;
 }
 
 .project-name {
@@ -210,19 +207,13 @@ h3 {
 .skills-wrap {
   display: flex;
   justify-content: space-between;
-  line-height: 29px;
+  line-height: 1.8;
   font-size: 18px;
-}
-
-.tech {
-  line-height: 40px;
-  font-size: 18px;
-  padding: 30px;
 }
 
 .skills ul {
-  list-style: none;
   padding: 0;
+  list-style: none;
 }
 
 /* MORE INFO & FOOTER */
@@ -231,26 +222,31 @@ h3 {
   padding: 30px 0;
   background-color: rgb(196, 196, 196);
 }
+
 .more-wrap a,
 .more-wrap a:visited {
   text-decoration: none;
   color: white;
 }
 
-.more-icons {
+.bottom-icons {
   display: flex;
-  justify-content: space-evenly;
-  align-items: center;
   height: 90px;
   padding: 30px 10px;
   background-color: rgb(196, 196, 196);
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.bottom-icons a {
+  flex: 0;
+  flex-direction: column;
 }
 
 footer {
-  background-color: rgb(189, 168, 252);
   padding: 30px;
+  background-color: rgb(189, 168, 252);
   font-size: 18px;
-  /* text-shadow: 0.2em 0.2em 0 rgba(255, 255, 255, 0.1); */
 }
 
 footer h4 {
@@ -261,44 +257,46 @@ footer h4 {
   header {
     background-position: left bottom;
   }
+
   .container {
     max-width: 700px;
   }
 
-  .socialMedia img,
-  .more-icons img {
+  .top-icons img,
+  .bottom-icons img {
     height: 30px;
     width: 30px;
   }
 
-  .socialMedia div,
-  .more-icons div {
+  .top-icons div,
+  .bottom-icons div {
     height: 60px;
     width: 60px;
   }
 
-  .headerTitle {
+  .header-title {
     margin-top: 50px;
     padding-bottom: 60px;
   }
 
-  .headerTitle h1 {
+  .header-title h1 {
     font-size: 64px;
   }
-  .headerTitle h2 {
+  .header-title h2 {
     font-size: 24px;
   }
 
-  .headerContainer {
+  .header-container {
     display: flex;
+    justify-content: space-between;
   }
 
-  .headerContainer img {
+  .header-container img {
     height: 230px;
     width: 230px;
-    align-self: flex-end;
     margin-bottom: -25px;
     margin-left: 10px;
+    align-self: flex-end;
   }
 
   .figure-line {
@@ -324,12 +322,12 @@ footer h4 {
     font-size: 20px;
   }
 
-  .project-container {
+  .project-item {
     width: 40%;
     font-size: 20px;
   }
 
-  .project-container div,
+  .project-item div,
   .other-projects div {
     padding: 3px 8px;
   }
@@ -343,7 +341,6 @@ footer h4 {
   }
 
   .skills-wrap {
-    line-height: 50px;
     font-size: 22px;
   }
 
@@ -361,11 +358,11 @@ footer h4 {
     max-width: 1088px;
   }
 
-  .headerTitle h1 {
+  .header-title h1 {
     font-size: 82px;
   }
 
-  .headerContainer img {
+  .header-container img {
     height: 280px;
     width: 280px;
   }
